@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/vivadoxilinx/final/final.sim/sim_1/synth/func/xsim/tb_intrcntrl_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_logic
+INFO: [VRFC 10-311] analyzing module intrcntrl
+INFO: [VRFC 10-311] analyzing module irr
+INFO: [VRFC 10-311] analyzing module isr
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-311] analyzing module priority_resolver
+INFO: [VRFC 10-311] analyzing module vector_generator
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/vivadoxilinx/final/final.srcs/sim_1/new/tb_interrupt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_intrcntrl
+WARNING: [VRFC 10-8658] /* is inside a comment [C:/vivadoxilinx/final/final.srcs/sim_1/new/tb_interrupt.v:135]
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/vivadoxilinx/final/final.srcs/sim_1/new/tb_interrupt.v:60]
