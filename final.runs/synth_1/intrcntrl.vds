@@ -1,0 +1,220 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Tue Jun 18 16:19:05 2024
+# Process ID: 3668
+# Current directory: C:/vivadoxilinx/final/final.runs/synth_1
+# Command line: vivado.exe -log intrcntrl.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source intrcntrl.tcl
+# Log file: C:/vivadoxilinx/final/final.runs/synth_1/intrcntrl.vds
+# Journal file: C:/vivadoxilinx/final/final.runs/synth_1\vivado.jou
+# Running On: LAPTOP-3KMOKN3A, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 4, Host memory: 8451 MB
+#-----------------------------------------------------------
+source intrcntrl.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 450.109 ; gain = 165.648
+Command: synth_design -top intrcntrl -part xc7s100fgga676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s100'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s100'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1192
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 887.078 ; gain = 413.125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'intrcntrl' [C:/vivadoxilinx/final/final.srcs/sources_1/new/interrupt.v:226]
+INFO: [Synth 8-6157] synthesizing module 'irr' [C:/vivadoxilinx/final/final.srcs/sources_1/new/interrupt.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'irr' (0#1) [C:/vivadoxilinx/final/final.srcs/sources_1/new/interrupt.v:27]
+INFO: [Synth 8-6157] synthesizing module 'priority_resolver' [C:/vivadoxilinx/final/final.srcs/sources_1/new/interrupt.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'priority_resolver' (0#1) [C:/vivadoxilinx/final/final.srcs/sources_1/new/interrupt.v:54]
+INFO: [Synth 8-6157] synthesizing module 'isr' [C:/vivadoxilinx/final/final.srcs/sources_1/new/interrupt.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'isr' (0#1) [C:/vivadoxilinx/final/final.srcs/sources_1/new/interrupt.v:89]
+INFO: [Synth 8-6157] synthesizing module 'vector_generator' [C:/vivadoxilinx/final/final.srcs/sources_1/new/interrupt.v:114]
+INFO: [Synth 8-6155] done synthesizing module 'vector_generator' (0#1) [C:/vivadoxilinx/final/final.srcs/sources_1/new/interrupt.v:114]
+INFO: [Synth 8-6157] synthesizing module 'control_logic' [C:/vivadoxilinx/final/final.srcs/sources_1/new/interrupt.v:168]
+INFO: [Synth 8-6155] done synthesizing module 'control_logic' (0#1) [C:/vivadoxilinx/final/final.srcs/sources_1/new/interrupt.v:168]
+INFO: [Synth 8-6157] synthesizing module 'mux' [C:/vivadoxilinx/final/final.srcs/sources_1/new/interrupt.v:195]
+INFO: [Synth 8-6155] done synthesizing module 'mux' (0#1) [C:/vivadoxilinx/final/final.srcs/sources_1/new/interrupt.v:195]
+INFO: [Synth 8-6155] done synthesizing module 'intrcntrl' (0#1) [C:/vivadoxilinx/final/final.srcs/sources_1/new/interrupt.v:226]
+WARNING: [Synth 8-6014] Unused sequential element masked_irr_reg was removed.  [C:/vivadoxilinx/final/final.srcs/sources_1/new/interrupt.v:71]
+WARNING: [Synth 8-7129] Port clk in module control_logic is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 978.594 ; gain = 504.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 978.594 ; gain = 504.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s100fgga676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 978.594 ; gain = 504.641
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s100fgga676-2
+WARNING: [Synth 8-327] inferring latch for variable 'int_req_reg' [C:/vivadoxilinx/final/final.srcs/sources_1/new/interrupt.v:184]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 978.594 ; gain = 504.641
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	  34 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 1     
+	  35 Input    6 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 160 (col length:80)
+BRAMs: 240 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1193.488 ; gain = 719.535
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1193.488 ; gain = 719.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1193.488 ; gain = 719.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1193.488 ; gain = 719.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1193.488 ; gain = 719.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1193.488 ; gain = 719.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1193.488 ; gain = 719.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1193.488 ; gain = 719.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1193.488 ; gain = 719.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     2|
+|2     |LUT2  |    25|
+|3     |LUT3  |    35|
+|4     |LUT4  |    59|
+|5     |LUT5  |    19|
+|6     |LUT6  |    83|
+|7     |FDCE  |    32|
+|8     |FDPE  |    32|
+|9     |FDRE  |    45|
+|10    |LDP   |     1|
+|11    |IBUF  |    70|
+|12    |OBUF  |     1|
+|13    |OBUFT |    32|
++------+------+------+
+
+Report Instance Areas: 
++------+-------------------------+------------------+------+
+|      |Instance                 |Module            |Cells |
++------+-------------------------+------------------+------+
+|1     |top                      |                  |   436|
+|2     |  control_logic_inst     |control_logic     |     1|
+|3     |  irr_inst               |irr               |   110|
+|4     |  isr_inst               |isr               |   119|
+|5     |  mux_inst               |mux               |    36|
+|6     |  priority_resolver_inst |priority_resolver |    42|
+|7     |  vector_generator_inst  |vector_generator  |    20|
++------+-------------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1193.488 ; gain = 719.535
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1193.488 ; gain = 719.535
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1193.488 ; gain = 719.535
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1193.488 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1282.887 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LDP => LDPE: 1 instance 
+
+Synth Design complete | Checksum: 4aa0234f
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1282.887 ; gain = 832.777
+INFO: [Common 17-1381] The checkpoint 'C:/vivadoxilinx/final/final.runs/synth_1/intrcntrl.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file intrcntrl_utilization_synth.rpt -pb intrcntrl_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 18 16:19:44 2024...
