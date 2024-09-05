@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_intrcntrl_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_intrcntrl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="96.666 ns"></ZoomStartTime>
+      <ZoomEndTime time="676.667 ns"></ZoomEndTime>
+      <Cursor1Time time="580.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="173"></NameColumnWidth>
+      <ValueColumnWidth column_width="304"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/tb_intrcntrl/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_intrcntrl/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_intrcntrl/read" type="logic">
+      <obj_property name="ElementShortName">read</obj_property>
+      <obj_property name="ObjectShortName">read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_intrcntrl/s" type="array">
+      <obj_property name="ElementShortName">s[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_intrcntrl/irq" type="array">
+      <obj_property name="ElementShortName">irq[31:0]</obj_property>
+      <obj_property name="ObjectShortName">irq[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_intrcntrl/intrcntrl_inst/priority_resolver_inst/irr" type="array">
+      <obj_property name="ElementShortName">irr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">irr[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_intrcntrl/imq" type="array">
+      <obj_property name="ElementShortName">imq[31:0]</obj_property>
+      <obj_property name="ObjectShortName">imq[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_intrcntrl/intrcntrl_inst/priority_resolver_inst/masked_irr" type="array">
+      <obj_property name="ElementShortName">masked_irr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">masked_irr[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_intrcntrl/intrcntrl_inst/isr_inst/isr" type="array">
+      <obj_property name="ElementShortName">isr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">isr[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_intrcntrl/intrcntrl_inst/vector_generator_inst/vector" type="array">
+      <obj_property name="ElementShortName">vector[31:0]</obj_property>
+      <obj_property name="ObjectShortName">vector[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_intrcntrl/intrcntrl_inst/priority_resolver_inst/int_id" type="array">
+      <obj_property name="ElementShortName">int_id[5:0]</obj_property>
+      <obj_property name="ObjectShortName">int_id[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_intrcntrl/int_req" type="logic">
+      <obj_property name="ElementShortName">int_req</obj_property>
+      <obj_property name="ObjectShortName">int_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_intrcntrl/int_ack" type="logic">
+      <obj_property name="ElementShortName">int_ack</obj_property>
+      <obj_property name="ObjectShortName">int_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_intrcntrl/data_bus" type="array">
+      <obj_property name="ElementShortName">data_bus[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_bus[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_intrcntrl/CLK_PERIOD" type="array">
+      <obj_property name="ElementShortName">CLK_PERIOD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD[31:0]</obj_property>
+   </wvobject>
+</wave_config>
